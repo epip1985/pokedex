@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 
-import PokedexScreen from "./PokedexScreen";
-import PokemonForm from "./PokemonForm";
+import PokedexScreen from "./components/PokedexScreen";
+import PokemonForm from "./components/PokemonForm";
 import { useState, useEffect } from "react";
 
 ReactDOM.render(<App />, document.getElementById("root"));

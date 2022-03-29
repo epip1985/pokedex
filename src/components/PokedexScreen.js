@@ -1,7 +1,7 @@
 import React from "react";
 import Stat from "./Stat.js";
-import poerror from "./img/poerror.jpg";
-import poloading from "./img/poloading.png";
+import poerror from "../img/poerror.jpg";
+import poloading from "../img/poloading.png";
 
 function PokedexScreen({ pokemon, loading, error }) {
   if (error) {

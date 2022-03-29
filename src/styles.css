@@ -11,29 +11,21 @@
   --blue: #519afb;
   font-size: 16px;
 }
-html{
-   background: url(./img/back.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
 
 body {
-    background-image: url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg) margin: 0;
-    background-image: url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background-image: url(https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-h1, h2{
+h1,
+h2 {
   margin: 0;
 }
 
-ul{
+ul {
   padding: 0;
   list-style: none;
 }
@@ -46,8 +38,6 @@ ul{
   margin: 0;
   font-family: system-ui;
 }
-
-
 
 /*------------------*/
 /* Pokedex */
@@ -99,11 +89,11 @@ ul{
   width: calc(100% - 9rem);
   right: 0;
   border-top: 1px solid black;
-  content: '';
+  content: "";
 }
 
 .pokedex-right-front:after {
-  content: '';
+  content: "";
   border-right: 2.5rem solid var(--red);
   border-bottom: 2.5rem solid var(--red);
   border-left: 2.5rem solid transparent;
@@ -145,11 +135,11 @@ ul{
   background-color: var(--red);
   left: 0;
   border-top: 1px solid black;
-  content: '';
+  content: "";
 }
 
 .pokedex-right-back:after {
-  content: '';
+  content: "";
   border-left: 2.5rem solid var(--red);
   border-bottom: 2.5rem solid var(--red);
   border-top: 2.5rem solid transparent;
@@ -159,12 +149,12 @@ ul{
   position: absolute;
   left: calc(100% - 9rem);
   bottom: 100%;
-  filter: drop-shadow(0 -1px 0 black)
+  filter: drop-shadow(0 -1px 0 black);
 }
 
 .light {
   border: 1px solid black;
-  box-shadow: -2px 2px 0 rgba(255,255,255, .5);
+  box-shadow: -2px 2px 0 rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 20px;
   background: gray;
@@ -172,7 +162,7 @@ ul{
 }
 
 .light.is-animated {
-  animation: .3s light linear infinite;
+  animation: 0.3s light linear infinite;
 }
 
 @keyframes light {
@@ -238,24 +228,21 @@ ul{
 }
 
 .pokedex-left-top > * {
-  margin-right: .7em;
+  margin-right: 0.7em;
 }
 
 .pokedex-left-bottom-lights {
   display: flex;
   align-items: flex-start;
-
 }
 
 .pokedex-left-bottom {
   margin-top: 1em;
 }
 
-.pokedex-left-bottom-lights  > * {
-  margin-right: .8em;
+.pokedex-left-bottom-lights > * {
+  margin-right: 0.8em;
 }
-
-
 
 /*----------------------*/
 /* Pokedex Screen */
@@ -266,7 +253,7 @@ ul{
   border: 1px solid black;
   margin: 20px 0;
   height: 50%;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 .pokedex-screen {
   background: white;
@@ -276,7 +263,7 @@ ul{
   display: flex;
   align-items: center;
 }
-.pokemon-info{
+.pokemon-info {
   padding: 0.8rem;
   flex-grow: 1;
   display: grid;
@@ -288,33 +275,31 @@ ul{
     "title title"
     "img   stats";
 }
-.pokemon-name{
+.pokemon-name {
   text-align: center;
   text-transform: capitalize;
   grid-area: title;
   font-weight: 700;
 }
-.pokemon-img{
+.pokemon-img {
   width: 100%;
   transform: scale(1.2);
   align-self: center;
   grid-area: img;
 }
-.pokemon-stats{
+.pokemon-stats {
   grid-area: stats;
 }
-.pokemon-stat{
+.pokemon-stat {
   font-size: 0.9rem;
 }
-.pokedex-no-screen{
+.pokedex-no-screen {
   width: 100%;
   height: 100%;
 }
-.stat-name{
+.stat-name {
   text-transform: capitalize;
 }
-
-
 
 /*---------------------*/
 /* Pokedex Form */
@@ -322,11 +307,11 @@ ul{
 .pokemon-form {
   display: grid;
   grid-template-columns: 1fr 50px;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
   margin-top: 1em;
 }
 
-.pokemon-input{
+.pokemon-input {
   font-family: system-ui;
   padding: 10px;
   background-color: var(--orange);
@@ -336,21 +321,20 @@ ul{
   outline: 0;
   font-size: 1em;
   flex-grow: 1;
-  transition: .2s;
+  transition: 0.2s;
 }
 .pokemon-input:focus {
   border-color: #fffff;
 }
 
-.pokemon-input:focus::-webkit-input-placeholder{
-  color: rgba(255,255,255, 1);
-
+.pokemon-input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 1);
 }
 .pokemon-input::-webkit-input-placeholder {
-  color: rgba(255,255,255, .8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.pokemon-btn{
+.pokemon-btn {
   border-radius: 50%;
 }
 
@@ -358,7 +342,10 @@ ul{
   width: 40px;
   height: 40px;
   position: relative;
-  background: radial-gradient(hsl(0, 100%, 70%), hsl(0, 97%, 25%)); /* Standard syntax */
+  background: radial-gradient(
+    hsl(0, 100%, 70%),
+    hsl(0, 97%, 25%)
+  ); /* Standard syntax */
   text-shadow: 0 -1px 0 #c30707;
   color: white;
   border: solid 1px hsl(0, 100%, 20%);
@@ -367,31 +354,30 @@ ul{
 
   outline: none;
 
-  box-shadow: inset 0 .5px   0 hsl(0, 100%, 50%),
-                    0 1px 0 hsl(0, 100%, 20%),
-                    0 1.5px   0 hsl(0, 100%, 18%),
-                    0 2px 0 hsl(0, 100%, 16%),
-                    0 2.5px   0 hsl(0, 100%, 14%),
-                    0 3px 0 hsl(0, 100%, 12%),
-                    0 3.5px   0 hsl(0, 100%, 10%),
-                    0 4px 0 hsl(0, 100%, 8%),
-                    0 4.5px   0 hsl(0, 100%, 6%);
+  box-shadow: inset 0 0.5px 0 hsl(0, 100%, 50%), 0 1px 0 hsl(0, 100%, 20%),
+    0 1.5px 0 hsl(0, 100%, 18%), 0 2px 0 hsl(0, 100%, 16%),
+    0 2.5px 0 hsl(0, 100%, 14%), 0 3px 0 hsl(0, 100%, 12%),
+    0 3.5px 0 hsl(0, 100%, 10%), 0 4px 0 hsl(0, 100%, 8%),
+    0 4.5px 0 hsl(0, 100%, 6%);
 }
 
 .pokemon-btn:hover {
-  background: radial-gradient(hsl(0, 100%, 70%), hsl(0, 97%, 35%)); /* Standard syntax */
+  background: radial-gradient(
+    hsl(0, 100%, 70%),
+    hsl(0, 97%, 35%)
+  ); /* Standard syntax */
 }
 
 .pokemon-btn:active {
-  background: radial-gradient(hsl(0, 100%, 80%), hsl(0, 100%, 45%)); /* Standard syntax */
+  background: radial-gradient(
+    hsl(0, 100%, 80%),
+    hsl(0, 100%, 45%)
+  ); /* Standard syntax */
 
   top: 2px;
 
-  box-shadow: inset 0 .5px 0 hsl(0, 100%, 50%),
-                    0 1px 0 hsl(0, 100%, 20%),
-                    0 1.5px 0 hsl(0, 100%, 18%),
-                    0 2px 0 hsl(0, 100%, 16%),
-                    0 2.5px 0 hsl(0, 100%, 14%),
-                    0 3px 0 hsl(0, 100%, 12%),
-                    0 3.5px 0 hsl(0, 100%, 10%);
+  box-shadow: inset 0 0.5px 0 hsl(0, 100%, 50%), 0 1px 0 hsl(0, 100%, 20%),
+    0 1.5px 0 hsl(0, 100%, 18%), 0 2px 0 hsl(0, 100%, 16%),
+    0 2.5px 0 hsl(0, 100%, 14%), 0 3px 0 hsl(0, 100%, 12%),
+    0 3.5px 0 hsl(0, 100%, 10%);
 }
