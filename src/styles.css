@@ -48,7 +48,7 @@ ul {
   overflow: hidden;
   height: 31rem;
   width: 23rem;
-  margin: 0 auto;
+  margin: 60px auto;
   overflow: initial;
   box-shadow: 0 2px 12px -2px rgba(255, 0, 0, 0.4);
 }
